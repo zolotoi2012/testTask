@@ -38,6 +38,9 @@ class DataController extends Controller
         parent::init();
     }
 
+    /**
+     * @throws \GuzzleHttp\Exception\GuzzleException
+     */
     public function actionIndex()
     {
         foreach (json_decode($this->getResponseData()) as $key => $items) {
